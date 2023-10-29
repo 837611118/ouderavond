@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-ua-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>ouderavond</title>
+</head>
+<body>
+     <header class="header">
+        <h2 href="#" class="logo">Egg<span>Crakerc.</span></h2>
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li class="drop-menu">
+                  <a href="#">Programma's </a>
+                  <div class="drop-content">
+                      <a href="Canvas.html">Canva's</a>
+                      <a href="Eduarte.html">Eduarte</a>
+                      <a href="contactmetons.html">Contact met ons</a>
+                      <a href="Lesrooster.html">Lesrooster</a>
+
+                      
+                  </div>
+              </li>
+                <li><a href="Examenplan.html">Examenplan</a></li>
+                <li><a href="BSA.html">BSA</a></li>
+                <li><a href="LOCATIE.html">Locatie</a></li>
+                <li class="drop-menu">
+                  <a href="over ons.html">Over ons</a>
+                  <div class="drop-content">
+                      <a href="yahia.html">Yahia Ahmad</a>
+                      <a href="abdul.html">Abdulrahman Argalah</a>
+                      
+                  </div>
+              </li>
+              </ul>
+          </nav>
+    </header>
+
+<form action="verwerk.php" method="post">
+    <label for="Voornaam">Voornaam:</label>
+    <input type="Voornaam" id="Voornaam" name="Voornaam" required><br><br>
+    <label for="Achternaam">Achternaam:</label>
+    <input type="Achternaam" id="Achternaam" name="Achternaam" required><br><br>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    <label>Geslacht:</label><br>
+    <input type="radio" id="man" name="geslacht" value="man">
+    <label for="man">Man</label>
+    <input type="radio" id="vrouw" name="geslacht" value="vrouw">
+    <label for="vrouw">Vrouw</label><br><br>
+    <label for="leeftijd">Leeftijd:</label>
+    <input type="number" id="leeftijd" name="leeftijd" required><br><br>
+    <label for="bericht">Bericht:</label><br>
+    <textarea id="bericht" name="bericht" rows="4" cols="50"></textarea><br><br>
+    <input type="submit" value="Verzenden">
+</form>
+<element class="footer">
+
+    <p>&copy; 2023 Egg <span>Crakerc.</span></p>
+</element>
+</body>
+</html>

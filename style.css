@@ -1,0 +1,599 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+body {
+    min-height: 100vh;
+    background: url(images/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+
+}
+
+body .LOCATIE{
+    min-height: 100vh;
+    background: url(images/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+
+}
+
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(10px);
+    border-bottom: 3px solid rgba(255, 255, 255, .2);
+
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.4), transparent);
+    transition: .9s;
+}
+
+.header:hover::before{
+    left: 100%;
+}
+
+.logo{
+    text-decoration: none;
+    color: #fff;
+    text-transform: none;
+    font-weight: 700;
+    font-size: 17px;
+    cursor: default;
+}
+.logo h1{
+    color: #ffffff;
+}
+
+.logo span {
+    color: #4700ee;
+}
+
+.drop-menu {
+    position: relative;
+  }
+  
+  .drop-content {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, .1);
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .drop-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #00a8c7;
+  }
+  
+  .drop-menu:hover .drop-content {
+    display: block;
+  }
+  .drop-content a:hover {
+    background-color: 0;
+  }
+  
+
+ul.drop-menu li {
+    display: none;
+    list-style: none;
+}
+li:hover > ul.drop-menu li {
+    display: flex;
+}
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+  
+  .navbar li {
+    font-size: 2.5rem;
+  }
+  
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 30px;
+}
+
+.navbar a:hover{
+    color: #392762;
+}
+
+section{
+    padding: 100px 200px;
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.home h2{
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.home h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4e9eff;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.home h3{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.home--1{
+    color: #fff;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.home--1:hover {
+    background-color: #0a49f6;
+    transform: scale(1.1);
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+
+.title{
+    display:flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 2.2em;
+    font-weight: 30px;
+    margin-bottom: 30px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: #ffffff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+    
+}
+
+.cardert{
+    background-color: #ffffff;
+    width: 45.25em;
+    height: 300px;
+    box-shadow: 0 1px 25px rgb(1 1 1 / 15%);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 26px;
+    transition: 0.7s ease;
+    
+    
+}
+
+.cardert-vid video{
+    width: 100%;
+ }
+
+ .cardert-info{
+    padding: 1em;
+    background-color: #fff;
+    border: 4px solid #640707;
+    min-height: 20em;
+    width: 50em;
+    overflow: hidden;
+    border-radius:23px;
+    margin: 11px;
+    transition: 0.7s ease;
+    
+}
+
+.cardert:hover{
+    transform: scale(1.1);
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.icon{
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3{
+    color: #0533cb;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+
+
+.canvas .content{
+    margin-top: 30px;
+}
+
+.canvas-card{
+    background-color: #fff;
+    border: 4px solid #640707;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.canvas-card:hover{
+    transform: scale(1.1);
+}
+
+.canvas-card:hover .canvas-image{
+    opacity: 0.9;
+}
+
+.canvas-imge img{
+   width: 100%;
+}
+
+.canvas-info{
+    padding: 1em;
+}
+
+.canvas-category{
+    font-size: 0.8em;
+    color: #000;
+}
+
+.canvas-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.meer-informatie{
+    text-decoration: none;
+    color: #2e1155;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.meer-informatie:hover{
+    color: #2c1268;
+}
+
+
+
+
+.LOCATIE .content{
+    margin-top: 40px;
+}
+
+.LOCATIE-card{
+    background-color: #fff;
+    border: 4px solid #640707;
+    min-height: 14em;
+    width: 32em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.LOCATIE-card:hover{
+    transform: scale(1.1);
+}
+
+.LOCATIE:hover .LOCATIE-image{
+    opacity: 0.9;
+}
+
+.LOCATIE-imge img{
+   width: 100%;
+}
+
+.LOCATIE-info{
+    padding: 1em;
+    background-color: #fff;
+    border: 4px solid #640707;
+    min-height: 11em;
+    width: 25em;
+    overflow: hidden;
+    border-radius:23px;
+    margin: 11px;
+    transition: 0.7s ease;
+    
+}
+
+.LOCATIE-category{
+    font-size: 0.8em;
+    color: #000000;
+}
+
+.LOCATIE-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.LOCATIE-title .P{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+
+ .Eduarte {
+  
+margin: 0;
+}
+ 
+ .Eduarte .content{
+     margin-top: 30px;
+ }
+ 
+ .Eduarte-card{
+    background-color: #fff;
+    border: 4px solid #640707;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+ }
+ 
+ .Eduarte-card:hover{
+     transform: scale(1.1);
+ }
+ 
+ .Eduarte-card:hover .Eduarte-image{
+     opacity: 0.9;
+ }
+ 
+ .Eduarte-imge img{
+    width: 100%;
+ }
+ 
+ .Eduarte-info{
+     padding: 1em;
+ }
+ 
+ .Eduarte-category{
+     font-size: 0.8em;
+     color: #000000;
+ }
+ 
+ .Eduarte-title{
+     display: flex;
+     justify-content: space-between;
+     text-transform: uppercase;
+     font-weight: 800;
+     margin-top: 10px;
+ }
+
+ .span{
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+ }
+
+ form {
+    max-width: 500px;
+    margin: 150 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 150px auto;
+}
+
+table, th, td {
+    border: 6px solid rgb(255, 255, 255);
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    color: floralwhite;
+}
+
+th {
+    background-color: #000000;
+}
+
+
+ .footer {
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    transition: .9s;
+    color: #fff;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.4), transparent);
+
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 10;
+    }
+  
+  footer p {
+    margin: 10px;
+  }
+
+
+
+
+@media screen and (max-width:800px){
+
+   .canvas {
+        display: inline;
+    }
+
+    
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header{
+        padding: 12px 20px;
+    }
+
+    .navbar a{
+        padding: 8px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+
+    .home--1{
+        padding: 0.4em 1.1em;
+    }
+
+    .social-icons a{
+        padding-right: 10px;
+    }
+
+    .card{
+        padding: 10px;
+    }
+
+    .canvas-info{
+        padding: 0.5em;
+    }
+
+    .LOCATIE-info{
+        padding: 0.5em;
+    }
+
+    .Eduarte-info{
+        padding: 0.5em;
+    }
+
+    .footer{
+        padding: 5px;
+    }
+
+    .navbar nav {
+        padding: 5px;
+        font-style: oblique ;
+    }
+      }
